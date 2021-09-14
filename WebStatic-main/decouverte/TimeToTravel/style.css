@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Work+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "work Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 70px;
+}
+
+/* classes */
+
+.darksalmon {
+  color: darksalmon;
+}
+
+header {
+  background-image: url(img/pyramides.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 150px 50px;
+  height: 200px;
+}
+
+header a {
+  color: white;
+}
+
+/* #content {
+  display: flex;
+  flex-direction: column;
+} */
+
+#destination {
+  margin-left: 100px;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+}
+.cont-1 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cont-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 270px;
+  width: 365px;
+  padding: 15px;
+  border: 1px solid darksalmon;
+}
+
+.card span {
+  font-size: 50px;
+  color: darksalmon;
+}
+
+.cont-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 15px 0;
+  padding: 10px;
+  color: darksalmon;
+  background-color: white;
+  border-color: darksalmon;
+}
