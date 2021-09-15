@@ -11,3 +11,19 @@ body {
   background-position: center;
   font-family: "Roboto", "Sans serif";
 }
+
+hr {
+  margin: 20px;
+}
+#sexe {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+input {
+  margin: 5px;
+}
