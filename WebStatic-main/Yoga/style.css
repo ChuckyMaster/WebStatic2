@@ -1,5 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mandali&family=Raleway:wght@400;700&display=swap");
+
+/* CLASSE UTILITAIRE*/
+.blue {
+  color: #6e8e9b;
+}
+
+.icone {
+  width: 125px;
+  height: 125px;
+}
+
+.rond {
+  border-radius: 50%;
+  background-color: white;
+  padding: 15px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-yoga {
+  margin: 25px;
+}
+
+.separator {
+  width: 3px;
+  height: 75px;
+  background-color: #6e8e9b;
+  border-radius: 10%;
+  margin: 50px 0;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+.btn {
+  color: black !important;
+  background-color: white;
+  box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.842);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+a.btn {
+  margin: 15px;
+}
+
+.img-size {
+  height: 350px;
+  width: 450px;
+}
+
+/* ********************************* */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 main {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,11 +70,11 @@ main {
 }
 
 .content {
-  background-color: blueviolet;
-
+  /* background-color: blueviolet; */
   width: 1060px;
   /* height: 3000px;  */
 }
+
 header {
   /* background-color: purple; */
   padding: 50px;
@@ -32,12 +94,10 @@ header {
 
 header h1 {
   font-size: 100px;
+  font-family: "Mandali", sans-serif;
+  margin: 40px;
 }
 
-.logo {
-  width: 55px;
-  height: 55px;
-}
 nav {
   display: flex;
   flex-direction: row;
@@ -58,19 +118,28 @@ ul li {
 article {
   /* display: flex;
   flex-direction: column; */
-  background-color: pink;
-}
-.description-yoga {
-  /* display: flex; */
-  width: auto;
-  height: auto;
-  background-color: green;
+  /* background-color: pink; */
 }
 
-.cours {
+.description-yoga {
   display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  /* background-color: green; */
+}
+
+/* .cours {
+  display: flex;
+  flex-direction: column;
   background-color: red;
   height: 350px;
+} */
+
+.art-cour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form {
