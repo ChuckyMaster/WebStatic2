@@ -62,6 +62,84 @@
           <input type="text" name="" value="" /> <br />
           <label for="adresse"> Votre Ville</label>
           <input type="text" name="" value="" /> <br />
+
+          <div class="champ">
+            <label for="departrment">Votre departement:</label>
+            <select name="departement" id="departement">
+              <option value="rhone">Rhône</option>
+              <option value="ain">Ain</option>
+              <option value="je sais pas">Je sais pas</option>
+              <option value="haute alpes">Hautes Alpes</option>
+              <option value="isere">Isère</option>
+              <option value="cantal">Cantal</option>
+              <option value="terre du milieu">Terre du milieu</option>
+            </select>
+          </div>
+          <hr />
+
+          <label for="budget"
+            >Quel budget êtes vous prêt à investir pour valider?</label
+          >
+          <br />
+
+          <div class="budget">
+            <input type="range" min="0" max="1000" value="10" step="1" />
+          </div>
+          <label for="budget"> Budget:</label>
+          <datalist>
+            <option value="0">0</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            <option value="80">80</option>
+            <option value="80">90</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend>Langues</legend>
+          <p>Cochez les langues dont vous maitrisez</p>
+
+          <div class="langues">
+            <div>
+              <input type="checkbox" id="français" name="français" />
+              <label for="français">français</label>
+            </div>
+            <div>
+              <input type="checkbox" id="anglais" name="anglais" />
+              <label for="anglais">Anglais</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Chinois" name="chinois" />
+              <label for="chinois">Chinois</label>
+            </div>
+            <div>
+              <input type="checkbox" id="allemand" name="allemand" />
+              <label for="allemend">allemand</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Choisissez Votre Destination de rêves</legend>
+          <label>Choisir vos destinations? </label>
+          <select name="outre-mer" multiple size="4">
+            <optgroup label="outre-mer">
+              <option value="">Chien</option>
+              <option value="chat">Chat</option>
+              <option value="hamster" disabled>Hamster</option>
+            </optgroup>
+            <optgroup label="Animaux volants">
+              <option value="perroquet">Perroquet</option>
+              <option value="macaw">Macaw</option>
+              <option value="albatros">Albatros</option>
+            </optgroup>
+          </select>
         </fieldset>
       </form>
     </div>

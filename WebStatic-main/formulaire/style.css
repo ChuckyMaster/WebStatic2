@@ -27,3 +27,19 @@ label {
 input {
   margin: 5px;
 }
+
+.budget {
+  display: inline-block;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+}
+
+datalist {
+  display: none;
+}
+
+.langues {
+  display: flex;
+  flex-direction: row;
+}

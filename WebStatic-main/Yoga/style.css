@@ -1,0 +1,84 @@
+main {
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.content {
+  background-color: blueviolet;
+
+  width: 1060px;
+  /* height: 3000px;  */
+}
+header {
+  /* background-color: purple; */
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.61),
+      rgba(0, 0, 0, 0.315)
+    ),
+    url(img/yogamat.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+  color: white;
+}
+
+header h1 {
+  font-size: 100px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 55px;
+}
+
+ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  margin: 10px;
+}
+
+article {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: pink;
+}
+.description-yoga {
+  /* display: flex; */
+  width: auto;
+  height: auto;
+  background-color: green;
+}
+
+.cours {
+  display: flex;
+  background-color: red;
+  height: 350px;
+}
+
+.form {
+  background-color: grey;
+  height: 450px;
+}
+
+footer {
+  background-color: black;
+  height: 65px;
+}
