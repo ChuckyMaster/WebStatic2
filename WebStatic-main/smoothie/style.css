@@ -106,10 +106,14 @@ article {
   display: flex;
   flex-direction: column;
 }
-
+.concept {
+  display: flex;
+  justify-content: center;
+}
 .cards {
   margin: 50px;
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
