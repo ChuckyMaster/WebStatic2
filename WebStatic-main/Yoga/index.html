@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.mobile.css" />
+    <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,9 +19,9 @@
           <nav>
             <img class="logo" src="img/logo.png" alt="logo" />
             <ul>
-              <li><a href="#"></a>Concept</li>
-              <li><a href="#"></a>Cours</li>
-              <li><a href="#"></a>Contact</li>
+              <li><a href="#">Concept</a></li>
+              <li><a href="#">Cours</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </nav>
           <div class="main-title">
@@ -29,8 +30,9 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Incidunt!
             </p>
-            <a class="btn" href="#">Découvrir</a>
           </div>
+          <a class="btn" href="#">Découvrir</a>
+          <!-- <button class="btn">Découvrir</button> -->
         </header>
 
         <article>
@@ -102,17 +104,42 @@
           <div class="separator"></div>
 
           <div class="call">
-
-            <p>Etre rappelé</p>
-
+            <p><strong>Etre rappelé :</strong></p>
+            <div class="daycall">
+              <div class="buttons">
+                <button class="button">Aujourd'hui</button>
+                <button class="button">Demain</button>
+                <button class="button">Plus Tard</button>
+              </div>
+            </div>
           </div>
+          <div class="renseignement">
+            <form action="POST">
+              <div>
+                <label for="nomprenom">Nom Prénom</label> <br />
+                <input type="text" name="nomprenom" /> <br />
+              </div>
 
+              <div>
+                <label for="email">Email</label><br />
+                <input type="text" name="email" />
+              </div>
 
-
-
-          
-
-
+              <div class="selection">
+                <label for="selection"> <strong>Vous êtes intéréssé(e) par :</strong> </label>
+                <select name="selection" id="selection">
+                  <option value="yoga vinsaya">Yoga Vinsaya</option>
+                  <option value="chamaniste">Chamaniste</option>
+                  <option value="meditation">Meditation</option>
+                  <option value="hypnose">Hypnose</option>
+                  <option value="sorcellerie">Sorcellerie</option>
+                </select>
+              </div>
+              
+            </form>
+            
+          </div>
+          <a class="btn" href="#">Envoyer</a>
         </div>
         <footer>2k21</footer>
       </div>

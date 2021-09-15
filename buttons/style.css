@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+
+button {
+padding: 25px 30px;
+letter-spacing: 5px;
+font-weight: 600;
+font-family: sans-serif;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+color: #333;
+background: white;
+outline: none;
+border:none;
+border-radius: 10px;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+button:before {
+
+    content: "";
+    height: 100%;
+    width: 20%;
+    background: rgba(135, 207, 235, 0.596);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    left: 0;
+    transition: 0.8s linear;
+    opacity: 0;
+    /* display: none; */
+}
+
+button:hover{
+box-shadow: 0px 0px 10px 4px rgba(135, 207, 235, 0.644) ;
+
+}
+
+button:hover::before {
+    transform:skew(45deg);
+    filter: hue-rotate(300deg);
+    left: 75%;
+    width: 50%;
+    opacity: 1;
+    background: rgba(135, 207, 235, 0.507);
+
+}
