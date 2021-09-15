@@ -1,0 +1,55 @@
+@media (max-width: 767px) {
+  /* body {
+    overflow-x: hidden;
+  } */
+
+  header {
+    margin: auto;
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.63),
+        rgba(0, 0, 0, 0.123)
+      ),
+      url("img/detoxcuresmoothie.jpg");
+    /* background-position: center;
+    background-size: cover;
+    width: 100vh;
+    text-align: center; */
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+
+    color: white;
+    font-size: 60px;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* height: 450px; */
+    margin: auto;
+    /* background-color: blue; */
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vh; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
