@@ -8,9 +8,12 @@
 
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.mobile.css" />
-    <link rel="stylesheet" href="buttons.css">
+
+    <link rel="stylesheet" href="buttons.css" />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.laptop.css" />
+    <link rel="stylesheet" href="style.mobile.css" />
   </head>
   <body>
     <main>
@@ -30,14 +33,14 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Incidunt!
             </p>
+            <a class="btn" href="#">Découvrir</a>
           </div>
-          <a class="btn" href="#">Découvrir</a>
+
           <!-- <button class="btn">Découvrir</button> -->
         </header>
 
-        <article>
+        <article id="concept">
           <h2 class="blue">Le concept YOGASALOON</h2>
-          <div class="separator"></div>
 
           <div class="description-yoga">
             <div class="text-yoga">
@@ -50,21 +53,7 @@
                 hic aperiam libero voluptates?
               </p>
             </div>
-            <img class="blue icone" src="img/mat@2x.png" alt="mat" />
-          </div>
-
-          <div class="description-yoga reverse">
-            <div class="text-yoga">
-              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                ex officia perspiciatis ipsum explicabo eaque dolorem repellat
-                quidem iure molestiae! Laboriosam, ut accusamus. Tenetur
-                accusantium ab perspiciatis. Facilis deleniti eligendi commodi
-                hic aperiam libero voluptates?
-              </p>
-            </div>
-            <img class="blue icone" src="img/drink-list@2x.png" alt="drink" />
+            <img class="blue icone rond" src="img/mat@2x.png" alt="mat" />
           </div>
 
           <div class="description-yoga">
@@ -78,13 +67,31 @@
                 hic aperiam libero voluptates?
               </p>
             </div>
-            <img class="blue icone" src="img/drink@2x.png" alt="drink" />
+            <img
+              class="blue icone rond"
+              src="img/drink-list@2x.png"
+              alt="drink"
+            />
+          </div>
+
+          <div class="description-yoga">
+            <div class="text-yoga">
+              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+                ex officia perspiciatis ipsum explicabo eaque dolorem repellat
+                quidem iure molestiae! Laboriosam, ut accusamus. Tenetur
+                accusantium ab perspiciatis. Facilis deleniti eligendi commodi
+                hic aperiam libero voluptates?
+              </p>
+            </div>
+            <img class="blue icone rond" src="img/drink@2x.png" alt="drink" />
           </div>
         </article>
 
         <div class="cours">
           <h2 class="blue">Les cours YOGASALOON</h2>
-          <div class="separator"></div>
+
           <div class="art-cour">
             <img class="img-size" src="img/yoga.jpg" alt="yoga" />
             <div class="text-yoga">
@@ -101,32 +108,49 @@
         </div>
         <div class="form">
           <h2 class="blue">Contact suivre un cour</h2>
-          <div class="separator"></div>
 
           <div class="call">
             <p><strong>Etre rappelé :</strong></p>
-            <div class="daycall">
+            <!-- <div class="daycall">
               <div class="buttons">
                 <button class="button">Aujourd'hui</button>
                 <button class="button">Demain</button>
                 <button class="button">Plus Tard</button>
               </div>
-            </div>
+            </div> -->
+
+            <!-- Utilisation radio type à la place -->
+            <input
+              type="radio"
+              id="aujourd'hui"
+              name="day"
+              value="aujourd'hui"
+            />
+            <label class="btn" for="aujourd'hui">Aujourd'hui</label>
+
+            <input type="radio" id="Demain" name="day" value="Demain" />
+            <label class="btn" for="Demain">Demain</label>
+
+            <input type="radio" id="Plus tard" name="day" value="Plus tard" />
+            <label class="btn" for="Plus tard">Plus tard</label>
           </div>
           <div class="renseignement">
             <form action="POST">
               <div>
-                <label for="nomprenom">Nom Prénom</label> <br />
-                <input type="text" name="nomprenom" /> <br />
+                <!-- <label for="nomprenom">Nom Prénom</label> <br /> -->
+                <input type="text" name="day" placeholder="Nom Prénom" />
+                <br />
               </div>
 
               <div>
-                <label for="email">Email</label><br />
-                <input type="text" name="email" />
+                <!-- <label for="email">Email</label><br /> -->
+                <input type="text" name="email" placeholder="Email" />
               </div>
 
               <div class="selection">
-                <label for="selection"> <strong>Vous êtes intéréssé(e) par :</strong> </label>
+                <label for="selection">
+                  <strong>Vous êtes intéréssé(e) par :</strong>
+                </label>
                 <select name="selection" id="selection">
                   <option value="yoga vinsaya">Yoga Vinsaya</option>
                   <option value="chamaniste">Chamaniste</option>
@@ -135,9 +159,7 @@
                   <option value="sorcellerie">Sorcellerie</option>
                 </select>
               </div>
-              
             </form>
-            
           </div>
           <a class="btn" href="#">Envoyer</a>
         </div>
